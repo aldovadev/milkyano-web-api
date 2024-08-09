@@ -1,0 +1,17 @@
+services:
+  barber-api:
+    image: aldovadev/barber-api:latest
+    container_name: barber-api
+    restart: unless-stopped
+    environment:
+      - PORT=8800
+      - SQUARE_API_KEY=${SQUARE_API_KEY}
+      - SQUARE_ACCESS_TOKEN=${SQUARE_ACCESS_TOKEN}
+      - SQUARE_LOCATION_ID=${SQUARE_LOCATION_ID}
+    ports:
+      - "8800:8800"
+    networks:
+      - barber_default
+networks:
+  barber_default:
+    external: true

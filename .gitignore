@@ -1,0 +1,6 @@
+node_modules
+.env
+request.rest
+resources
+dist
+.DS_Store
