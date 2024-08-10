@@ -36,7 +36,7 @@ const limiter = rateLimit({
 app.use(limiter);
 
 app.get('/', async (_, res: Response) => {
-  res.json({ message: 'API Fadedlinesbarbershop is working!' });
+  res.json({ message: 'API Milkyano is working!' });
 });
 
 app.use('/api/v1', formRoutes);
