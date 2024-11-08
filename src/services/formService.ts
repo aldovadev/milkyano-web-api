@@ -27,6 +27,7 @@ export const sendAdsWebhook = async (formData: AdsRequest): Promise<any> => {
     payload.append("fullName", formData.fullName);
     payload.append("email", formData.email);
     payload.append("businessName", formData.businessName);
+    payload.append("sourceUrl", formData.sourceUrl)
 
     const response = await axios.post(
       process.env.PABBLY_WEBHOOK_URL,

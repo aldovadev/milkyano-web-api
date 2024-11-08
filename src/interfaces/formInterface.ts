@@ -9,6 +9,7 @@ export interface formData {
 }
 
 export interface AdsRequest {
+  sourceUrl: string;
   fullName: string;
   email: string;
   businessName: string
